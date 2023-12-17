@@ -5,7 +5,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Oxigênio', sans-serif; /* Helvetica, sans-serif; */
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -16,6 +16,7 @@ header {
 
 header#cabecalho h1 {
     color: rgb(150, 4, 4) ; /*  #048f08; */
+    font-size: 35px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-family: 'Open Sans', sans-serif;
 }
@@ -26,7 +27,7 @@ nav#drop-menu {
     position: fixed;
     display: flex;
     left: 1200px;
-    top: 35px;
+    top: 45px;
     margin: 5px;
     background-color: #000000;
 }
@@ -133,7 +134,7 @@ body {
 
 
 .container {
-    background-color:#FFF;
+    background-color: #FFF;
     width: 1700px;
     margin: 50px auto auto auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) ;
@@ -200,9 +201,9 @@ h2 {
     color:  #0f6469;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
-    font-size: 14px;
+    font-size: 18px;
     padding: 7px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .bold {
@@ -279,7 +280,7 @@ footer#rodape span {
 .boxe-rodape h2 {
     color: #8d0338;
     font-size: 14px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 5px;
 }
 
