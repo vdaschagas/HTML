@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxigênio&exibição=troca');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 
 /* Iniciar */
 *{
@@ -17,7 +17,7 @@ header {
 header#cabecalho h1 {
     color: rgb(150, 4, 4) ; /*  #048f08; */
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-    font-family: 'Oxigênio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -198,7 +198,7 @@ h3 {
 }
 h2 {
     color:  #0f6469;
-    font-family: 'Oxigênio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 14px;
     padding: 7px;
@@ -265,7 +265,7 @@ footer#rodape div {
 footer#rodape span {
     margin: 0px auto auto 800px;
     padding: 8px;
-    font-family: 'Oxigênio', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-align: center;
     color: rgb(151, 7, 7);
