@@ -10,215 +10,274 @@
 
 
 /* Cabeçalho */
-header {
-    text-align: center;
+.cabecalho {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: #00000055;
 }
-
-header#cabecalho h1 {
+.cabecalho h1 {
+    margin-left: 3%;
     color: rgb(150, 4, 4) ; /*  #048f08; */
     font-size: 35px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     font-family: 'Open Sans', sans-serif;
 }
-
-
+.cabecalho h3 {
+    margin-left: 3%;
+    color: rgba(7, 76, 156, 0.899) ;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans', sans-serif;
+}
 /* Menu */
-nav#drop-menu {
-    position: fixed;
+body nav {
+    position: absolute;
+    top: 10%;
+    left: 290px;
     display: flex;
-    left: 1200px;
-    top: 45px;
-    margin: 5px;
-    background-color: #000000;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    height: 8vh;
 }
 
-nav#drop-menu h1 {
+
+/* .nav-list input {
     display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer
 }
+.nav-list label {
+    font: bold 30px Arial;
+    display: none;
+    width: 35px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center
+} */
 
-nav#drop-menu ul {
+.nav-list {
     list-style: none;
-    text-transform: uppercase;
+    display: flex;
 }
-
-nav#drop-menu ul li {
-    display: inline-block;
-    position: relative;
-    background-color: #000000;
-    font-size: 14px;
-    text-shadow: 0 -1px 0 #000;
+.nav-list li {
+    margin-left: 0;
+    opacity: 1;
+    margin-left: 32px;
+    transition: 0.3s;
 }
-
-
-nav#drop-menu ul li a {
-    display: inline-block;
-    padding: 5px 25px;
-    color: #FFF;
+.nav-list li:hover {
+    background-color: #9a2c04;
+    border-radius: 5px;
+    /* box-shadow: 2px 2px 5px rgba(0,0,0, 0.400); */
+    box-sizing: border-box;
+    padding: 5px 7px;
+}
+.nav-list li a {
     text-decoration: none;
-    text-align: center;
+    color: #000000;
+}
+.nav-list li a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}    
+.nav-list li a.prett::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 6px 5px;
+    border-style: solid;
+    border-color: #eee transparent transparent transparent;
+    position: absolute;
+    top: 25px;
+    left: 100%;
+}
+.nav-list.active {
+    transform: translate(0);
 }
 
-nav#drop-menu ul li ul.dropdown li {
+.nav-list li prett a:hover  ul.dropdown {
     display: block;
-    padding: 10px;
-}
-
-nav#drop-menu ul li ul.dropdown {
-   padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+}   
+.dropdown {
+    display: none;
+    height: 80px;
+    width: 40px;
+    top: 70%;
+    left: 70%;
+    background: #1111110f;
     position: absolute;
     z-index: 999;
     display: none;
-    left: -25px;
+    border: 0;
+}
+/* .dropdown li {
+    display: block;
+    width: 70%;
+    margin: 10% 5% 5% 10%;
+    text-transform: none;
+} */
+
+/* .nav-list:hover ul.dropdown {
+    display: block;
+} */
+
+.nav-list li:hover ul.dropdown {
+    display: block;
+    list-style: none;
+    width: 40%;
+    left: 73%;
+    margin: .6% 2%;
+    text-transform: none;
+}
+.nav-list li ul.dropdown li {
+    display: block;
+    list-style: none;
+    width: 65%;
+    padding: 5px;
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translate(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
 
-nav#drop-menu ul li a:hover{
-    background-color:  #460b0b;
-    border-radius: 5px;
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #FFF;
+    margin: 8px;
     transition: 0.3s;
 }
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+.mobile-menu.active .line3 {
+    transform: rotate(-45deg) translate(-5px, 7px);
+}
 
-nav#drop-menu ul li:hover ul.dropdown{
+
+
+/* Área de pesquisa do Site */
+.buscador {
+    position: absolute;
+    top: 25%;
+    left: 40%;
     display: block;
-} 
-
-
-/*Posições Fixas e Alinhamentos de texto */
-.elemento-fixo {
-    position:fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 1px;
-    background-color: #000000;
-}
-
-#alinhamento-esquerda {
-    padding: 25px;
-    text-align: left;
-}
-
-#alinhamento-centro {
-    color: #048f08;
-    padding: 15px;
-    text-align: center;
+    margin: 7px;
+    padding: 1px 15px;
 }
 
 
-
-/* ================================ Conteúdo */
-body {
-    background-color: #dddddd;
-    color: rgba(0, 0, 0, 0.3);
+.left {
+    float: left;
+    width: 80%; /* A largura é de 80%, por padrão */
 }
-
-/* ------------- TOPO ---------------*/
-.products-container-topo {
-    max-width:  1200px;
-    margin: 6% auto;
+.right {
+    float: right;
+    width: 20%; /* A largura é de 20%, por padrão */
 }
+.main {
+    float: left;
+    width: 97%; /* A largura é de 60%, por padrão */
+    margin: 96px 30px 20px 30px;
+    padding: 1%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+ /* Use uma consulta de mídia para adicionar um ponto de interrupção a 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; /* A largura é de 100%, quando o visor é de 800px ou menor */
+    }
+    body {
+        background-color: #ffffff;
+        color: rgba(0, 0, 0, 0.3);
+        max-width: 300px;
+        margin-right: 60px;
+        margin-top: 16px;
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #c7c7ca;
+        color: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+    }
+  }
 
-.products-container-topo h3 {
-    margin: 5px;
-    padding: 15px;
+.main h2 {
+    margin-top: 2%;
+    margin-bottom: 1%;
     color:  #0f6469;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    padding: 7px;
 }
 
-.products-container-topo p {
-    font-size: 22px;
-    padding: 10px;
-    color: #000000;
-}
-/* -------------FIM TOPO ---------------*/
-
-
-
-.container {
-    background-color: #FFF;
-    width: 1700px;
-    margin: 50px auto auto auto;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5) ;
-    padding: 10px;
+.main h3 {
+    margin-top: 5%;
+    margin-bottom: 1%;
+    color:  #0f6469; /*  #3db36b; */
+    border-left: 5px solid rgb(151, 7, 7);
+    font-size: 18px;
+    padding-left: 7px;
+    text-transform: uppercase;
 }
 
-.products-container {
-    max-width:  1600px;
-    margin: 8% auto;
+.main p {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color:  #0f6469;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding: 7px;
 }
-
-.card {
-    width: 45%;
-    display: inline-block;
-    margin: 1% 1%;
-    padding: 15px;
-}
-
-.card p {
-    margin-bottom: 3px;
-    font-size: 20px;
-    color: #000000;
-    padding: 6px;
-}
-
-.product-image {
-    height: 300px;
-    width: 100%;
-    margin-bottom: 10px;
-    background-position: center;
-    background-size: cover;
-}
-
-.bloco{
-    display: block;
-    width: 1200px;
-    height: 400px;
-    padding: 4px;
-    margin: 10px;
+.main ul li {
+    list-style: none;
 }
 
 .hidden{
     display: none;
 }
 
-/* imagens */
-#img-1 {background-image: url('../img/light-bulb-4514505_640.jpg');}
-#img-2 {background-image: url('../img/networks-1987215_640.jpg');} 
-#img-3 {background-image: url('../img/network-4478141_640.jpg');}
-#img-4 {background-image: url('../img/social-3064515_640.jpg');}
-#img-5 {background-image: url('../img/social-media-1795578_640.jpg');}
-#img-6 {background-image: url('../img/success-2081167_640.jpg');}
-
-
-h3 {
-    margin-bottom: 4%;
-    color:  #0f6469; /*  #3db36b; */
-    border-left: 5px solid rgb(151, 7, 7);
-    font-size: 24px;
-    padding-left: 7px;
-    text-transform: uppercase;
-}
-h2 {
-    color:  #0f6469;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-size: 18px;
-    padding: 7px;
-    /* text-transform: uppercase; */
-}
-
-.bold {
-    font-weight: bold;
-}
-
 .btn {
     display: block;
-    width: 80%;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #0f6469;
     color: #FFF;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     transition: 0.3s;
 }
@@ -227,65 +286,58 @@ h2 {
     background-color:  #04a4cd;
 }
 
-
-
 /* Links */
 .decoration {
-    padding: 5px;
+    padding: 3px;
      text-align: center;
      text-decoration: none;
-     background-color: #000000;
-     color: #ffffff;
-     border-radius: 5px;
+     line-height: 30px;
+     color: #000000;
      transition: 0.2s;
 }
 
 .decoration:hover {
     background-color: #460b0b;
     color: #FFF;
+    border-radius: 5px;
 }
 
-
-
-/* Rodapé */
-footer#rodape {
-    height: 300px;
-    background-color: #000000;
-    color: #FFF;
-    border-top: 3px solid  #460b0b;
-    padding: 1px auto 5px auto;
-}
-
-footer#rodape div {
+.rodape {
+    clear: both;
     display: inline-block;
-    line-height: 20px;
-    margin: 5px 100px 10px 100px;
-    padding: 2px;
+    margin: 3%;
 }
-
-footer#rodape span {
-    margin: 0px auto auto 800px;
-    padding: 8px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: rgb(151, 7, 7);
+.rodape ul li {
+    list-style: none;
 }
-
-.boxe-rodape {
-    color: #ffffff;
-    border-left: 2px solid  #460b0b;
+.rodape p {
+    margin: 1%;
 }
-
-.boxe-rodape h2 {
-    color: #8d0338;
-    font-size: 14px;
-    /* text-transform: uppercase; */
-    padding: 5px;
+.rodape div {
+    display: flex;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    align-items: center;
+    justify-content: center;
 }
-
-.boxe-rodape p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    padding: 2px;
+.info {
+    display: flexbox;
+    width: 100%;
+    float: left;
+    margin: 0%;
+    align-items: baseline;
+    justify-content: left;
+}
+.info div {
+    display: flex;
+    position:static;
+    top: 10%;
+    width: 100%;
+    margin: 0%;
+    align-items: baseline;
+    justify-content: left;
+}
+.info h2 {
+    padding: 1% 0% 0% 0%;
 }
