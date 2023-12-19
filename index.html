@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Burn</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script language="javascript" src="scripts/funcoes.js"></script>
+    <script language="javascript" src="scripts/funcsite.js"></script>
 </head>
 
 
 <body>
     <header class="cabecalho">
-        <h1>Agência Burn</h1>
-        <h3>Publicidade e Marketing Digital</h3>
 
-            <nav>
-                <h1 class="hidden">Menu Principal</h1>
-                <div class="mobile-menu">
-                    <div class="line1"></div>            
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-        
-                <ul class="nav-list">
-                    <li><a href="#" title="Home">Home</a></li>
-                    <li><a href="#" title="Empresa">Empresa</a></li>
-                    <li><a href="#"  title="Blog">Blog</a></li>
-                    <li><a class='prett' href="#" title="Contato">Contato</a>
-                        <ul class="dropdown">
-                            <li><a href="https://pt-br.facebook.com/"  target="_blank" alt="facebook">facebook</a></li>
-                            <li><a href="https://www.instagram.com/"  target="_blank" alt="instagram">instagram</a></li>
-                        </ul>
-                    </li>
-                </ul>       
+            <nav class="nav-bar">
+              <div class="logo">
+                  <h2>Agência</h2><h1> Burn</h1><p>
+                  <h3>Publicidade e Marketing Digital</h3></p>
+              </div>
+              <h1 class="hidden">Menu Principal</h1>
+              <div class="nav-list">
+                  <ul>
+                      <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                      <li class="nav-item"><a href="empresa.html" class="nav-link">Empresa</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link"> blog</a></li>                      
+                      <li class="nav-item"><a href="contato.html" class="nav-link"> Contato</a></li>
+                  </ul>
+              </div>
+              <div class="login-button">
+                  <button><a href="#">Entrar</a></button>
+              </div>
+  
+              <div class="mobile-menu-icon">
+                  <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+              </div>
+
             </nav>
             
-            <div>
-                <!-- Um formulário de pesquisa é uma outra maneira não linear comum de navegar por um site. -->
-                <form class="buscador">
-                    <input type="search" name="q" placeholder="Pesquisar" />
-                    <input type="submit" value="Procurar!" />
-                </form>
+            <div class="mobile-menu">
+              <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="empresa.html" class="nav-link">Empresa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> blog</a></li>                      
+                <li class="nav-item"><a href="contato.html" class="nav-link"> Contato</a></li>              </ul>
+  
+              <div class="login-button">
+                  <button><a href="#">Entrar</a></button>
+              </div>
             </div>
 
     </header>
@@ -143,6 +148,7 @@
 
           <!-- Esse é o rodapé principal que vai ser usado em todas as páginas do nosso website -->
     <footer class="rodape">
+
         <section class="info">
             <div>
                 <p><h2>Sobre nós</h2></p>
@@ -192,8 +198,8 @@
         </section>
 
         <div>
-            <p>Agência Burn © 2023 por vdaschagas. Todos os Direitos Reservados.</p>
-        </div>
+          <p>Agência Burn © 2023 por: vdaschagas.<br>Todos os Direitos Reservados.</p>
+        </div>  
 
     </footer>
 
