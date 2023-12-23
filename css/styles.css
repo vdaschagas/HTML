@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oxygen&display=swap');
 
-/* Iniciar */
+/* INICIAR LIMPEZA DE ESTILOS */
 *{
     padding: 0%;
     margin: 0%;
@@ -9,216 +9,245 @@
 }
 
 
-/* Cabeçalho */
+/* ================= CABEÇALHO ========*/
 .cabecalho {
-/*     position: fixed; */
+    background-image:  linear-gradient(45deg, #000000, #d3edf0);
     width: 100%;
-    /* height: 28%; */
-    height: 15%;
-    background-color:  rgba(0, 0, 0, 0.996);
-    border: 2% solid  #0187a7;
-    border-radius: 5px;
+    padding: 0px;
 }
-.cabecalho h1 {
-    margin-left: 2%;
-    color: rgb(150, 4, 4) ; /*  #048f08; */
-    font-size: 32px;
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+.logo {
+    display: inline-block;
+    width: 82%;
+    align-items: center;
+    justify-content: right;
+    padding: 1%;
+}
+.logo h1 {
+    color: #fff;
+    font-size: 42px;
     font-family: 'Open Sans', sans-serif;
-    padding: 0% 1% 2% 0%;
+    padding-left: 1%;
 }
-.cabecalho h2 {
-    margin-left: 2%;
+.logo h2 {
     color: rgba(255, 255, 255, 0.899) ;
     font-size: 25px;
     font-family: 'Open Sans', sans-serif;
 }
-.cabecalho h3 {
-    margin-left: 3%;
-    color:  #0187a7;
-    font-size: 15px;
+.titulo-h2 {
+    color: rgba(255, 255, 255, 0.899) ;
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
 }
-/* Menu */
-/* body nav {
-    position: absolute;
-    top: 10%;
-    left: 290px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    height: 8vh;
-} */
-
-
-.nav-bar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 15rem;
+.logo h3 {
+    color: #044a5c;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
+
+ /* BOTÃO HAMBURGER */ 
+ .btn-mobile{
+    display: none;
+ }
+ .linha {
+    width: 25px;
+    height: 2px;
+    background-color: #ccc;
+    display: block;
+    margin: 8px auto;
+    position: relative;
+    transform-origin: center;
+    transition: .3s;
+}
+.btn-hamburger {
+    display: inline-block;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    padding: 1%;
+}
+.btn-hamburger.ativar {
+    margin-top: 5px;
+    border: 2px solid red;
+}
+.btn-hamburger.ativar .linha:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+    background-color: red;
+}
+.btn-hamburger.ativar .linha:nth-child(2) {
+    width: 0;
+}
+.btn-hamburger.ativar .linha:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+    background-color: red;
 }
 
-.logo h1 {
-    color: #fff;
-}
 
-.nav-list {
-    display: flex;
-    align-items: center;
+/*  Botão Entrar  */
+.login-button {
+display: inline-block;
+width: 5%;
+align-items: center;
+justify-content: center;
+padding: 1%;
 }
-
-.nav-list ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-.nav-item {
-    margin: 0 15px;
-    border: 1px solid #0187a7;
-    border-radius: 5px;
-    padding: 2% 5%;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: #fff;
-    font-weight: 400;
-    background-color:  rgba(0, 0, 0, 0.996);
-}
-
 .login-button button {
     border: none;
-    padding: 10px 15px;
+    padding: 10px 35px;
     border-radius: 5px;
     background-color: #0187a7;
 }
-
 .login-button button a {
     text-decoration: none;
     color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 300;
+    font-size: 1rem;
+} /* ----------- FINAL CABEÇALHO --------*/
+
+
+
+/* ============ MENU -NAVBAR- ============ */
+.navbar {
+    display: inline-block;
+    position: absolute;
+    background-color: #00000000;
+    padding-right: 4px;
+   width: 25%;
+   align-items: center;
+   justify-content: center;
 }
-
-.mobile-menu-icon {
-    display: none;
-}
-
-.mobile-menu {
-    display: none;
-}
-
-
-.left {
+/* Links inside the navbar */
+.navbar a {
     float: left;
-    width: 80%; /* A largura é de 80%, por padrão */
-    padding: 0% 2% 0% 0%;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    padding: 14px 32px 1px 0px;
+    text-decoration: none;
+    position: relative;
 }
-.right {
-    float: right;
-    width: 20%; /* A largura é de 20%, por padrão */
+ /* Efeito de linha abaixo do texto  */
+ .navbar a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-image: linear-gradient(45deg, #0800ff, #00e5ff);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
 }
+.navbar a:hover::after {
+    width: 80%;
+}
+.navbar a#pagina-atual::after {
+    width: 30%;
+}
+
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    height: auto;
+    position: relative;
+}
+  
+ /* Dropdown button */
+ .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    cursor: pointer;
+}
+  
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+}
+  
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-image:  linear-gradient(45deg, #000000, #d3edf0);
+    padding: 2px;
+    min-width: 100px;
+    margin: 10px;
+    top: 80%;
+    left:0;
+    border-radius: 10px;
+    height: 180px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    top: 0px;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+    text-decoration: none;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #00000000;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+} /* --------------- FINAL MENU ---------- */
+
+
+
+/* ================= MAIN ================== */
 .main {
     float: left;
-    width: 97%; /* A largura é de 60%, por padrão */
+    background-image:  linear-gradient(45deg, #000000, #8ea5a8);
+    width: 97%;
     margin: 20px 30px 20px 30px;
     padding: 1%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  }
-  
- /* Use uma consulta de mídia para adicionar um ponto de interrupção a 800px: */
-  @media screen and (max-width: 800px) {
-    .left, .main, .right {
-      width: 100%; /* A largura é de 100%, quando o visor é de 800px ou menor */
-    }
-
-    body {
-        background-color: #ffffff;
-        max-width: 400px;
-        margin-top: 0px;
-        margin-right: 40px;
-        overflow-x: hidden;
-    }
-
-    .nav-bar {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item {
-        display: none;
-    }
-    .login-button {
-        display: none;
-    }
-    .mobile-menu-icon {
-        display: block;
-    }
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        margin-left: 40px;
-    }
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
-    .mobile-menu .nav-item {
-        display: block;
-        padding-top: 1.2rem;
-    }
-    .mobile-menu .login-button {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
-    .open {
-        display: block;
-    }
-
-    footer{
-        .info {
-            display: inline-block;
-            width: 100%;
-        }
-        .info div {
-            display: inline-block;
-            position:relative;
-            top: 30%;
-            width: 100%;
-            margin: 0% 3%;
-            padding-right: 10px;
-        }
-    }
-
-    
-
-  }
-
+}
 .main h2 {
     margin-top: 2%;
     margin-bottom: 1%;
-    color:  #0f6469;
+    color:  #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 24px;
     padding: 7px;
 }
-
 .main h3 {
     margin-top: 5%;
     margin-bottom: 1%;
-    color:  #0f6469; /*  #3db36b; */
+    color:  rgb(7, 129, 151);
     border-left: 5px solid rgb(151, 7, 7);
     font-size: 18px;
     padding-left: 7px;
@@ -228,15 +257,153 @@
 .main p {
     margin-top: 1%;
     margin-bottom: 1%;
-    color:  #0f6469;
+    color:   #ffffff;
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-size: 18px;
     padding: 7px;
 }
+
 .main ul li {
     list-style: none;
+} 
+
+.left {
+    float: left;
+    width: 80%;
+    padding: 0% 2% 0% 0%;
 }
+.right {
+    float: right;
+    width: 20%;
+} /* --------------- FINAL MAIN ------------ */
+
+
+
+
+/* ================= MEDIA SCREN ================== */
+ @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%;
+    }
+
+    header {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        top: 0%;
+        left: 25px;
+        margin: 0%; 
+        width: 100%;
+        height: auto;
+        border: 4% solid  #7bcfaf;
+        border-radius: 15px;
+        align-content: baseline;
+    }
+
+    body {
+        background-image:  linear-gradient(90deg, #000000, #8ea5a8);
+        max-width: 400px;
+        margin-top: 0px;
+        margin-right: 10px;
+        height:auto;
+    }
+    .main h2 {
+        color:  #064171;
+    }
+    .right h2 {
+        color: #0187a7;
+    }
+    .logo {
+        display: flexbox;
+        position: relative;
+        margin-bottom: 0%;
+        margin-left: 0px;
+        width: 98%;
+        height: auto;
+        border: 1%;
+        top: 0px;
+        left: 4.4px;
+        padding: 1%;
+    }
+    .logo h1 {
+        font-size: 35px;
+    }    
+    .logo h2 {
+        font-size: 12px;
+        padding-bottom: 3px;
+    }
+    .logo h3 {
+        color:  #089ec3;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        padding-bottom: 0% 0% 2% 2%;
+        align-items: baseline;
+        left: 10%;
+    }
+
+
+    .navbar {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0px;
+        left: 0;
+        margin: 4%;
+    }
+
+
+    .login-button {
+        display: block;
+        position: relative;
+        padding: 1px;
+        top: 45px;
+        left: -80px;
+    }
+
+    /*  ------- Ação ativar menu mobile ---------  */
+    .open {
+        display: inline;
+    }
+
+    .ativar {
+        display: block;
+    }
+
+    .btn-mobile {
+        display: block;
+        cursor: pointer;
+    }
+    .btn-hamburger#btn-menu {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 330px;
+        background-color: #ffffff;
+    }
+
+    /*  ------------------------  */
+    .rodape {
+        clear: both;
+        block-size: 400px;
+        width: 107%;
+        background-image:  linear-gradient(90deg, #000000, #8ea5a8);
+    }
+    .rodape > .info {
+        display: block;
+        position: static;
+        width: 100%;
+        left: 30px;
+    }
+    .rodape > .info > div {
+        display: block;
+        width: 100%;
+    }
+
+} /* ----------- FINAL MEDIA -------- */
+
+
 
 .hidden{
     display: none;
@@ -265,58 +432,70 @@
      text-align: center;
      text-decoration: none;
      line-height: 30px;
-     color: #000000;
+     color: #ffffff;
      transition: 0.2s;
 }
 
 .decoration:hover {
-    background-color: #460b0b;
-    color: #FFF;
+    background-color:  #135077;
+    color: #ffffff;
     border-radius: 5px;
 }
 
+
+
+/* ================= RODAPÉ */
 .rodape {
     clear: both;
     display: inline-block;
-    margin: 3%;
+    font-family: Helvetica, sans-serif;
+    margin: 0%;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    height: auto;
 }
 .rodape ul li {
     list-style: none;
 }
+.rodape h2 {
+    padding-bottom: 1%;
+    font-size: 14px;
+}
 .rodape p {
-    margin: 1%;
+    padding-bottom: 1%;
+    font-size: 14px;
 }
 .rodape div {
     display: flex;
     float: left;
     width: 100%;
     margin: 0%;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 0% 0% 0%;
 }
 
 
 .info {
     display: flex;
-    width: 80%;
-    float: left;
-    margin: 3%;
-    align-items: baseline;
+    width: 100%;
+    align-items: center;
     justify-content: left;
 }
 .info div {
     display: inline-block;
-    position:relative;
     top: 0%;
     width: 100%;
-    margin: 1%;
-    align-items: first baseline;
-    justify-content: left;
+    padding: 12px 60px;
 }
 
 
 .info h2 {
-    margin-top: 2px;
-    padding: 5% 12% 0% 0%;
+    padding: 5% 12% 2% 0%;
 }
+.referencia {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
