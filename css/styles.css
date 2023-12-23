@@ -292,7 +292,7 @@ padding: 1%;
         position: relative;
         text-align: left;
         top: 0%;
-        left: 25px;
+        left: 18px;
         margin: 0%; 
         width: 100%;
         height: auto;
@@ -305,7 +305,7 @@ padding: 1%;
         background-image:  linear-gradient(90deg, #000000, #8ea5a8);
         max-width: 400px;
         margin-top: 0px;
-        margin-right: 10px;
+        margin-right: 20px;
         height:auto;
     }
     .main h2 {
