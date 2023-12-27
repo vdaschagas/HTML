@@ -5,35 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - agência Burn</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galeria.css">
     <script language="javascript" src="scripts/funcoes.js"></script>
+    <script language="javascript" src="scripts/slide.js" defer></script>
 </head>
 <body>
 
-    <header class="cabecalho">
-      
-      <div class="container">
-        <div class="logo">
-          <h1> <span class="titulo-h2">Agência</span> Burn</h1>
-          <p><h3>Publicidade e Marketing Digital</h3></p>
-        </div>
-  
-        <div class="btn-mobile">
-          <button class="btn-hamburger" onclick="animar()" id="btn-menu">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-          </button>
-        </div>
-  
+  <header class="cabecalho">
+
+    <div class="container">
+
+      <div class="flex">
+
         <h1 class="hidden">Menu Principal</h1>
         <div class="navbar">
-          <a href="index.html">Home</a>
+          <a id="pagina-atual" href="index.html">Home</a>
           <a href="empresa.html">Empresa</a>
           <a href="#news">Blog</a>
   
           <!-- = DROPDOWN = -->
           <div class="dropdown">
-            <a id="pagina-atual" href="contato.html">Contato</a>
+            <a href="contato.html">Contato</a>
   
             <!-- = DROPDOWN-CONTENT = -->
             <div class="dropdown-content">
@@ -45,11 +37,33 @@
           </div>
   
         </div>
-        <div class="login-button">
-          <button><a href="#">Entrar</a></button>
+
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt=""></a>
+          <h1> <span class="tamanho-diferente">agência</span> burn</h1>
+          <h3>Marketing criativo</h3>
+          
+          <label class="switch">
+            <input type="checkbox"  name="switch-btn">
+            <span class="slider round"></span>
+          </label>
+
         </div>
+
       </div>
-      </header>
+
+    </div>
+
+    <div class="btn-mobile">
+      <button class="btn-hamburger" onclick="animar()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+    </div>
+
+</header>
+
 
 <!-- = MAIN = -->
 <main class="main">

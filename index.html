@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência Burn</title>
+    <title>Burn</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galeria.css">
     <script language="javascript" src="scripts/funcoes.js"></script>
+    <script language="javascript" src="scripts/slide.js" defer></script>
 </head>
 
 <body>
-    <header class="cabecalho">
-      
-      <div class="container">
-        <div class="logo">
-          <h1> <span class="titulo-h2">Agência</span> Burn</h1>
-          <p><h3>Publicidade e Marketing Digital</h3></p>
-        </div>
-  
-        <div class="btn-mobile">
-          <button class="btn-hamburger" onclick="animar()" id="btn-menu">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-          </button>
-        </div>
-  
-        <!-- = NAVBAR = -->
+  <header class="cabecalho">
+
+    <div class="container">
+
+      <div class="flex">
+
         <h1 class="hidden">Menu Principal</h1>
         <div class="navbar">
           <a id="pagina-atual" href="index.html">Home</a>
@@ -46,99 +37,213 @@
           </div>
   
         </div>
-        <div class="login-button">
-          <button><a href="#">Entrar</a></button>
+
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" alt=""></a>
+          <h1> <span class="tamanho-diferente">agência</span> burn</h1>
+          <h3>Marketing criativo</h3>
+          
+          <label class="switch">
+            <input type="checkbox"  name="switch-btn">
+            <span class="slider round"></span>
+          </label>
+
         </div>
+
       </div>
 
-    </header>
+    </div>
+
+    <div class="btn-mobile">
+      <button class="btn-hamburger" onclick="animar()" id="btn-menu">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+    </div>
+
+</header>
 
 
-    <!-- MAIN -->
-    <main class="main">
 
-        <article class="left">
-          <h2>ATRAIA CLIENTES NOVOS TODOS OS DIAS,
-            FATURE MAIS E CRESÇA COM PREVISIBILIDADE</h2>
-            <img src="img/social-3064515_640.jpg" style="max-width:100%;height:auto;">
-          <p>
-            Conecte-se, Envolve-se, Conquiste: O Poder da Presença Online
-            O marketing digital vai além das fronteiras tradicionais, 
-            colocando sua marca diretamente nas mãos do seu público-alvo.
-            Seja por meio das redes sociais, conteúdo envolvente ou estratégias de SEO, 
-            a presença online é a porta de entrada para interações significativas.
-            Seus clientes estão online, e é aqui que você precisa estar para cultivar
-            relacionamentos sólidos.
-            Alcance Global, Mantenha-se Local: A Versatilidade do Digital
-            Uma das características mais poderosas do marketing digital é 
-            sua capacidade de alcançar audiências globais enquanto mantém uma abordagem local.
-            Seja você uma startup ambiciosa ou uma empresa consolidada, as estratégias 
-            digitais podem ser adaptadas para atender às necessidades específicas do seu 
-            mercado, proporcionando uma vantagem competitiva única.
-          </p>
+<section class="banner">
+  <h1>As melhores <br>
+  condições para <br>
+  sua empresa! </h1><br>
+    <h1 class="destaque">A impressão da sua marca será amor, 
+      <br> expressão e sentimentos. 
+      <br> Fidelize seus clientes da melhor forma 
+      <br> existente sendo uma marca de valor.
+  </h1>
   
-          <h3>RESULTADOS ATRAVÉS DO DIGITAL PARA SUA EMPRESA</h3>
+  <section class="carrossel">
+    <div class="galeria">
+        <div class="galeria-itens">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
   
-          <p>
-            Transforme Seu Negócio: Conquiste Resultados Excepcionais Através do Marketing Digital 
-            No dinâmico cenário empresarial atual, a presença online é mais do que uma vantagem competitiva; 
-            é uma necessidade vital. O Marketing Digital emergiu como a chave para desbloquear o 
-            potencial máximo de sua empresa, proporcionando resultados tangíveis e duradouros.
-          </p>
+            <div class="item-galeria first">
+  
+                <img src="/img/phone_iphone.svg" class="icone-slide" alt="Imagem 1">
+                <div class="titulo-slide">
+                    <h3>Público engajado com sua marca</h3>
+                </div>    
+                <div class="texto-slide">
+                    <h4>Quando seu público admira sua marca eles serão sempre engajados</h4>
+                </div>   
+            </div>
+            <div class="item-galeria">
+                <img src="/img/handshake.svg" class="icone-slide" alt="Imagem 2">
+                <div class="titulo-slide">
+                    <h3>Público apaixonado pela sua marca</h3>
+                </div>    
+                <div class="texto-slide">
+                    <h4>Quando sua marca tem valor ela sempre será a primeira opção</h4>
+                </div>
+            </div>
+            <div class="item-galeria">
+                <img src="/img/ssid_chart.svg" class="icone-slide" alt="Imagem 3">
+                <div class="titulo-slide">
+                    <h3>Baixo investimento e alta rentabilidade</h3>
+                </div>    
+                <div class="texto-slide">
+                    <h4>Investimento baixo e alta rentabilidade com nossas técnicas</h4>
+                </div>   
+            </div>
+  
+  
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
 
-          <h3>PANFLETAGEM DIGITAL NÃO FUNCIONA</h3>
-          <p>
-            Marketing digital não é apenas fazer posts. Para ter resultado, é preciso ter estratégia. 
-            E somente você como dono ou dona do negócio é responsável pela estratégia do seu negócio no digital. 
-            Você pode até terceirizar a execução, mas não a estratégia.
-          </p>
-  
-          <h3>ASSESSORIA DE DESTAQUE</h3>
-          <p>
-            Marca de Valor é um programa que tem como objetivo desenvolver a estratégica de marketing 
-            digital do seu negócio e acompanhar a sua execução com foco nos resultados. 
-            Nesse programa nós vamos trabalhar nos 3 pilares do crescimento para atrair uma 
-            fila de clientes que valorizam sua marca e se tornarão seus fãs no digital. 
-            Tudo isso aplicando as melhores estratégias de marketing digital através de um método 
-            que já alavancou os resultados de mais de 8.500 negócios.
-          </p>
-  
-        </article>
-  
+        <div class="titulo-topo">
+          <h2>O melhor marketing inclui:</h2>
+        </div>
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
 
-        <aside class="right" >
-            <h3>CONHEÇA A AGÊNCIA BURN</h2>
-            <p>
-                Maximize Seu Potencial: Parceiros Digitais Para o Sucesso Navegar no vasto universo 
-                do marketing digital pode ser desafiador, mas não precisa ser solitário. 
-                Conte com parceiros especializados para orientá-lo através das últimas tendências, 
-                estratégias comprovadas e tecnologias inovadoras. Juntos, podemos transformar sua visão 
-                digital em resultados reais. Embarque na jornada digital e descubra um novo mundo de 
-                oportunidades. 
-                Conquiste resultados excepcionais para sua empresa, moldando o futuro através do poder 
-                do marketing digital. Estamos aqui para guiá-lo a cada passo do caminho.
-            </p>
 
-            <h3>FAÇA UM DIAGNÓSTICO GRATUITO</h2>
-                <img src="img/social-media-1795578_640.jpg" style="max-width:100%;height:auto;">
-            <p>
-                Um especialista irá analisar porque o seu marketing não está funcionando como deveria. 
-                Através de uma videoconferência exclusiva, você descobrirá o que precisa ajustar 
-                para melhorar os resultados através do digital.
-            </p>
-            <a href="#" class="btn">Agendar diagnóstico gratuito</a>
+        <div class="faixa">
+          <img src="img/job-5382501_640.jpg" alt="">
+          <h1>Sempre atualizados</h1>
+          <h3>Treinamentos semanas com nossa equipe para estarmos 
+           sempre ligados as tendências e novidades do mercado.</h3>
+        </div>
 
-          <h2>Relacionado</h2>
+        <div class="faixa2">
+          <img src="img/design4.svg" alt=""> <!--  DESIGNER  -->
+          <h1>Pacotes Meta e Google ADS</h1>
+          <h3>valores a partir de R$699</h3>
+        </div>
+
+        <div class="faixa3">
+          <img src="img/design3.svg" alt=""> <!--  DESIGNER  -->
+          <h1>Alto alcance com:</h1>
+        </div>
+
+        <div class="faixa4">
+          <img src="img/logo-color.png" alt=""> <!--  LOGO  -->
+          <h1>Mais de 25 mil leads gerados no último ano.</h1>
+        </div>
+
+        <div class="faixa5">
+          <h3>Relacionado</h3>
+            <ul>
+              <li><a class="relacionados"  href="#">Oh I do like to be beside the seaside</a></li>
+              <li><a class="relacionados"  href="#">Oh I do like to be beside the sea</a></li>
+              <li><a class="relacionados"  href="#">Although in the North of England</a></li>
+              <li><a class="relacionados"  href="#">It never stops raining</a></li>
+              <li><a class="relacionados"  href="#">Oh well...</a></li>
+            </ul>
+        </div>
+
+    </div>
+    </section>
+</section>
+
+
+
+
+  <header class="parallax">
+    <section class="ondas-parallax">
+      <div class="onda" id="onda1"></div>
+      <div class="onda" id="onda2"></div>
+      <div class="onda" id="onda3"></div>
+      <div class="onda" id="onda4"></div>
+    </section>
+  </header>
+
+<header class="cascata">
+<section class="secao-imgs"></section> <!--  Fundo parallax  -->
+
+<section class="secao-imgs" id="secao-img-id1">
+  <div class="celula">
+    <div class="img-coluna">
+        <img src="img/design4.svg" alt=""> <!--  DESIGNER  -->
+    </div> <!--  Imagem  -->  
+    <div class="texto-coluna">
+        <div class="titulo-textocoluna">
+            <h1>O MELHOR MARKETING</h1>
+        </div>    
+        <div class="conteudo-textocoluna">
+            <h3>é aquele que não parece marketing!</h3>
+        </div>    
+    </div>  <!--  Conteúdo  -->
+  </div> <!-- celula -->
+</section>
+
+<section class="secao-imgs"></section> <!--  Fundo parallax  -->
+
+<section class="secao-imgs" id="secao-img-id2">
+          <div class="celula">
+              <div class="img-coluna">
+                  <img src="img/design.svg" alt=""> <!--  DESIGNER  -->
+              </div> <!--  Imagem  -->
+              <div class="texto-coluna">
+                  <div class="titulo-textocoluna">
+                      <h1>Pacotes Marketing e Produções</h1>
+                  </div>    
+                  <div class="conteudo-textocoluna">
+                      <h3>valores a partir de R$999</h3>
+                  </div>    
+              </div>  <!--  Conteúdo  -->
+          </div> <!-- celula -->
+</section>
+
+<section class="secao-imgs"></section> <!--  Fundo parallax  -->
+
+<section class="secao-imgs" id="secao-img-id3">
+  <div class="celula">
+    <div class="img-coluna">
+        <img src="img/design6.svg" alt=""> <!--  Nome Imagem  -->
+    </div> <!--  Imagem  -->
+    <div class="texto-coluna">
+        <div class="titulo-textocoluna">
+            <h3></h3>
+        </div>    
+        <div class="conteudo-textocoluna">
+            <h1>Faça parte da revolução Burn, cancelamos seu contrato 
+              se não obter o retorno que esperava!!</h1>
+        </div>    
+    </div>  <!--  Conteúdo  -->
+</div> <!-- celula -->
   
-          <ul>
-            <li><a class="decoration"  href="#">Oh I do like to be beside the seaside</a></li>
-            <li><a class="decoration"  href="#">Oh I do like to be beside the sea</a></li>
-            <li><a class="decoration"  href="#">Although in the North of England</a></li>
-            <li><a class="decoration"  href="#">It never stops raining</a></li>
-            <li><a class="decoration"  href="#">Oh well...</a></li>
-          </ul>
-        </aside>
-      </main>
+</section>
+
+<section class="secao-imgs"></section> <!--  Fundo parallax  -->
+
+<!--   <section class="secao-imgs">
+
+</section> -->
+</header>
+
 
 
       <!-- = RODAPÉ = -->
