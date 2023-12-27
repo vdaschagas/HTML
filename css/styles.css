@@ -364,7 +364,7 @@ section.ondas-box {
     height: 100px;
     position: absolute;
     bottom: 0;
-    background-image: url("/img/design4.svg");
+    background-image: url("../img/design4.svg");
     /* background-size: 1000px 100px; */
     /* background-repeat: no-repeat; */
     background-size: 1000px 100px;
