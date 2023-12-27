@@ -283,10 +283,10 @@ body {
   }
 /* ----------- FINAL CABEÇALHO --------*/
 
-
+/* 
 :root {
     --scroll-height: 25px;
-}
+} */
 
 @keyframes ondaAnimada {
     0% {
@@ -365,8 +365,10 @@ section.ondas-box {
     position: absolute;
     bottom: 0;
     background-image: url('/img/design4.svg');
+    /* background-size: 1000px 100px; */
+    /* background-repeat: no-repeat; */
     background-size: 1000px 100px;
-    animation: ondaAnimada 2s ease-in-out infinite alternate;
+    animation: ondaAnimada 3s ease-in-out infinite alternate;
 }
 #onda1 {
     z-index: 1000;
@@ -740,7 +742,7 @@ display: flex;
     bottom: 0; 
     background-image: url('/img/design4.svg');
     background-size: 500px 100px;
-    animation: ondaAnimada 2s ease-in-out infinite alternate;
+    animation: ondaAnimada 3s ease-in-out infinite alternate;
 }
 #onda1 {
     z-index: 1000;

@@ -1,9 +1,9 @@
 
 /* ANIMAR */
 function animar() {
-    const btn = document.getElementById('btn-menu')
-    btn.classList.toggle('ativar')
-    menuShow()
+    const btn = document.getElementById('btn-menu');
+    btn.classList.toggle('ativar');
+    menuShow();
 } 
 
 
@@ -19,9 +19,9 @@ function menuShow() {
 
 function clickMenu() {
     if(itens.style.display == 'block'){
-        itens.style.display = 'none'
+        itens.style.display = 'none';
     } else {
-        itens.style.display = 'block'
+        itens.style.display = 'block';
     }
 }
 
@@ -31,18 +31,18 @@ window.addEventListener("scroll", function(){
 });
     
 
-var onda1= documento.getElementById('onda1')
-var onda2= documento.getElementById('onda2')
-var onda3= documento.getElementById('onda3')
-var onda4= documento.getElementById('onda4')
+var onda1= documento.getElementById('onda1');
+var onda2= documento.getElementById('onda2');
+var onda3= documento.getElementById('onda3');
+var onda4= documento.getElementById('onda4');
 
 window.addEventListener('scrool', function(){
-    var rolagemPos = window.scrollY
+    var rolagemPos = window.scrollY;
 
-    onda1.style.backgroundPositionX = 400 + rolagemPos * 8 + 'px'
-    onda2.style.backgroundPositionX = 300 + rolagemPos * -6 + 'px'
-    onda3.style.backgroundPositionX = 200 + rolagemPos * 4 + 'px'
-    onda4.style.backgroundPositionX = 100 + rolagemPos * -2 + 'px'
-})
+    onda1.style.backgroundPositionX = 400 + rolagemPos * 4 + 'px';
+    onda2.style.backgroundPositionX = 300 + rolagemPos * -4 + 'px';
+    onda3.style.backgroundPositionX = 200 + rolagemPos * -2 + 'px';
+    onda4.style.backgroundPositionX = 100 + rolagemPos * 2 + 'px';
+});
 
 
