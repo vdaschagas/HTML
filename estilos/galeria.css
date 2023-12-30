@@ -1,0 +1,116 @@
+.galeria {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 450px;
+    top: 0px;
+    margin: 0px auto;
+
+}
+.titulo-topo {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    margin-top: 0 auto;
+    left: 0px;
+    justify-content: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+.icone-slide {
+    width: 100px;
+    height: 100px;
+} 
+.secoesMain .galeria {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #fffefe;
+    box-shadow: 2px 4px 4px #4b4b4b;
+    width: 300px;
+    height: 370px;
+    border-radius: 3%;
+}
+.secoesMain .galeria-itens {
+    width: 300px;
+    height: 100px;
+    display: flex;
+}
+.secoesMain .galeria-itens input {
+    display: none;
+    top: 0px;
+}
+.item-galeria {
+    width: 300px;
+    position: relative;
+    transition: 2s;
+    background-color: white;
+}
+.item-galeria img {
+    width: 300px;
+}
+.item-galeria .titulo-slide {
+    font-size: 2em;
+    padding: 0px 8px 0px 8px;
+    color: #d18100;
+}
+.item-galeria .texto-slide {
+    font-size: 1em;
+    padding: 3px 8px 0px 8px;
+    color: #000000;
+}
+.manual-navigation {
+    position: absolute;
+    width: 500px;
+    margin-top: 315px; 
+    left: -100px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn {
+    border: 2px solid rgb(12, 90, 132);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child) {
+    margin-right: 3px;
+}
+.manual-btn:hover {
+    background-color: rgb(0, 0, 0);
+}
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+#radio2:checked ~ .first {
+    margin-left: -100%;
+}
+#radio3:checked ~ .first {
+    margin-left: -200%;
+}
+.navigation-auto div {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+}
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    margin-top: 315px;
+    justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 3px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: rgb(0, 0, 0);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: rgb(0, 0, 0);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: rgb(0, 0, 0);
+}

@@ -1,0 +1,474 @@
+@charset "UTF-8";
+
+
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Comentário...';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+  
+    .cabecalho {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .cabecalho h1 {
+        padding: 10px;
+        text-align: center;
+    }
+    
+        div#icon-menu-mobile img {
+            display: none;
+        }
+        menu#mnuItens {
+            display: block;
+        }
+        menu ul li {
+            display: inline-block;
+            width: 200px;
+        }
+    
+        main {
+            width: 100vw;
+            margin: 0% auto;
+        }
+        .secoesMain {
+            width: 90%;
+        }
+        .secoesMain img {
+            width: 50vw;
+            margin: 0 auto;
+        }
+    
+    section {
+        width: 80vw;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-attachment: fixed;
+    }
+
+    section:nth-of-type(1) {
+        background-image: url(/img/design.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        width: 100vw;
+        height: 400px;
+    }
+    section:nth-of-type(3) {
+        background-image: url(/img/design2.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        width: 100vw;
+        height: 400px;
+    }
+    section:nth-of-type(5) {
+        background-image: url(/img/design3.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        width: 100vw;
+        height: 400px;
+    }
+    section:nth-of-type(7) {
+        background-image: url(/img/design4.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        width: 100vw;
+        height: 400px;
+    }
+    section:nth-of-type(2), section:nth-of-type(4), section:nth-of-type(6) {
+        background-color: #ffffff;
+        width: 82vw;
+        height: 550px;
+    }
+    section:nth-of-type(8) {
+        background-color: #ffffff;
+        width: 82vw;
+        height: 350px;
+    }
+    section:nth-of-type(2) h2, section:nth-of-type(4) h2, section:nth-of-type(6) h2, section:nth-of-type(8) h2 {
+        color: #000000;
+    }
+    section:nth-of-type(2) p, section:nth-of-type(4) p, section:nth-of-type(6) p, section:nth-of-type(8) p {
+        color: #000000;
+    }
+
+
+    .btn_consulta {
+        display: block;
+        position: relative;
+        width: 20vw;
+        padding: 1px 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer .convite {
+        position: relative;
+        display: flexbox;
+        width: 100vw;
+        height: 300px;
+        padding-top: 5px;
+        margin: 0px auto;
+    }
+    footer .convite h1 {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        margin: 0% auto;
+        color: #ffffff;
+        font-size: 2em;
+    }
+    footer .convite img {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 100px;
+        top: 120px;
+        margin-left: 50%;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+
+    div#icon-menu-mobile img {
+        display: none;
+    }
+    menu#mnuItens {
+        display: block;
+    }
+    menu ul li {
+        display: inline-block;
+        width: 200px;
+    }
+    main {
+        width: 100vw;
+        margin: 0% auto;
+    }
+        
+    section {
+        width: 70vw;
+        height: 300px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-attachment: fixed;
+    }
+
+    section:nth-of-type(1) {
+        background-image: url(/img/design.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        /* width: 50vw; */
+        height: 600px;
+    }
+    section:nth-of-type(3) {
+        background-image: url(/img/design2.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        width: 100vw;
+        height: 600px;
+    }
+    section:nth-of-type(5) {
+        background-image: url(/img/design3.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        width: 100vw;
+        height: 600px;
+    }
+    section:nth-of-type(7) {
+        background-image: url(/img/design4.svg);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        width: 100vw;
+        height: 600px;
+    }
+
+
+    main h2 {
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 2em;
+        color: #ffffff;
+        padding: 1%;
+    }
+    main p {
+        text-align: left;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+    .btn_consulta {
+        display: block;
+        position: relative;
+        width: 20%;
+        padding: 1px 5px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    footer .convite {
+        position: relative;
+        display: flexbox;
+        width: 100vw;
+        height: 300px;
+        padding-top: 5px;
+        margin: 0px auto;
+    }
+    footer .convite h1 {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        margin: 0% auto;
+        color: #ffffff;
+        font-size: 2em;
+    }
+    footer .convite img {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 100px;
+        top: 120px;
+        margin-left: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+
+  
+    .cabecalho {
+        background-color: rgb(0, 0, 0);
+    }
+    
+    .cabecalho h1 {
+        padding: 10px;
+        text-align: center;
+    }
+
+    div#icon-menu-mobile img {
+        display: none;
+    }
+    menu#mnuItens {
+        display: block;
+    }
+    menu ul li {
+        display: inline-block;
+        width: 200px;
+    }
+
+
+    section {
+
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        position: relative;
+        background-attachment: fixed;
+    }
+
+    section:nth-of-type(1) {
+        background-image: url(/img/design.svg);
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        position: relative;
+    }
+    section:nth-of-type(3) {
+        background-image: url(/img/design2.svg);
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    section:nth-of-type(5) {
+        background-image: url(/img/design3.svg);
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    section:nth-of-type(7) {
+        background-image: url(/img/design4.svg);
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .secoesMainFaixas {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: auto;
+        text-align: center;
+    }
+    .secoesMainFaixas img {
+        position: absolute;
+        width: 400px;
+        height: 200px;
+        top: 10%;
+
+    }
+    .secoesMainFaixas img#lcolor {
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 200px;
+        top: 40%;
+        margin-bottom: 10%;
+        margin-left: 25%;
+    }
+    main h2 {
+        position: relative;
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 2em;
+        color: #ffffff;
+        padding: 1%;
+    }
+    main p {
+        text-align: left;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        font-size: 1.5em;
+        color: #ffffff;
+    }
+    .btn_consulta button {
+        position: relative;
+        display: block;
+        width: 250px;
+        padding: 20px 5px;
+        text-align: center;
+        left: 0%;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1px solid #f56f01;
+        box-shadow: 2px 2px 2px #000000;
+    }
+
+    .btn_consulta button:hover {
+    background-color: rgb(45, 44, 43);
+    color: #ffffff;
+    }
+
+
+    footer {
+        display: block;
+        position: relative;
+        align-items: center;
+        padding: 20px;
+        background-color: #000000;
+    }
+
+    footer .convite {
+        position: relative;
+        display: flexbox;
+        width: 100vw;
+        height: 300px;
+        padding-top: 5px;
+        margin: 0px auto;
+    }
+    footer .convite h1 {
+        text-align: center;
+        justify-content: center;
+        margin: 0% auto;
+        color: #ffffff;
+        font-size: 2em;
+    }
+    footer .convite img {
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 100px;
+        top: 120px;
+        margin-left: 50%;
+    }
+    footer .info {
+        position: relative;
+        display: flex;
+        float: left;
+        width: 90vw;
+        height: auto;
+        margin: 2px auto;
+        padding: 0px 12px;
+    }
+
+    footer .info div {
+        display: inline-block;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        margin: 0px auto;
+        padding: 10px;
+    }
+    footer .info h2 {
+        padding: 10px 10px 10px 0px;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+    footer .info p {
+        color: #ffffff;
+        font-size: 1em;
+        text-align: left;
+        width: 60%;
+        height: auto;
+    }
+    footer .info ul li {
+        list-style: none;
+    }
+    footer .info a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    footer .info a:hover {
+        background-color: #004da0;
+        color:  #f56f01;
+    }
+    .referencia {
+        display: flex;
+        position: relative;
+        margin: 0px auto;
+        width: 100%;
+    }
+    .referencia p {
+        display: block;
+        width: auto;
+        margin: 0% auto;
+        padding: 10px;
+        font-size: .8em;
+        color: dodgerblue;
+    }
+}
+
