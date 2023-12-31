@@ -64,7 +64,7 @@
     }
 
     section:nth-of-type(1) {
-        background-image: url(/img/design.svg);
+        background-image: url(../img/design.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 80%;
@@ -72,21 +72,21 @@
         height: 400px;
     }
     section:nth-of-type(3) {
-        background-image: url(/img/design2.svg);
+        background-image: url(../img/design2.svg);
         background-repeat: no-repeat;
         background-size: 80%;
         width: 100vw;
         height: 400px;
     }
     section:nth-of-type(5) {
-        background-image: url(/img/design3.svg);
+        background-image: url(../img/design3.svg);
         background-repeat: no-repeat;
         background-size: 80%;
         width: 100vw;
         height: 400px;
     }
     section:nth-of-type(7) {
-        background-image: url(/img/design4.svg);
+        background-image: url(../img/design4.svg);
         background-repeat: no-repeat;
         background-size: 80%;
         width: 100vw;
@@ -173,7 +173,7 @@
     }
 
     section:nth-of-type(1) {
-        background-image: url(/img/design.svg);
+        background-image: url(../img/design.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 70%;
@@ -181,21 +181,21 @@
         height: 600px;
     }
     section:nth-of-type(3) {
-        background-image: url(/img/design2.svg);
+        background-image: url(../img/design2.svg);
         background-repeat: no-repeat;
         background-size: 70%;
         width: 100vw;
         height: 600px;
     }
     section:nth-of-type(5) {
-        background-image: url(/img/design3.svg);
+        background-image: url(../img/design3.svg);
         background-repeat: no-repeat;
         background-size: 70%;
         width: 100vw;
         height: 600px;
     }
     section:nth-of-type(7) {
-        background-image: url(/img/design4.svg);
+        background-image: url(../img/design4.svg);
         background-repeat: no-repeat;
         background-size: 70%;
         width: 100vw;
@@ -292,7 +292,7 @@
     }
 
     section:nth-of-type(1) {
-        background-image: url(/img/design.svg);
+        background-image: url(../img/design.svg);
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
@@ -300,7 +300,7 @@
         position: relative;
     }
     section:nth-of-type(3) {
-        background-image: url(/img/design2.svg);
+        background-image: url(../img/design2.svg);
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
@@ -308,7 +308,7 @@
         position: relative;
     }
     section:nth-of-type(5) {
-        background-image: url(/img/design3.svg);
+        background-image: url(../img/design3.svg);
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
@@ -316,7 +316,7 @@
         position: relative;
     }
     section:nth-of-type(7) {
-        background-image: url(/img/design4.svg);
+        background-image: url(../img/design4.svg);
         height: 400px;
         background-position: center;
         background-repeat: no-repeat;
