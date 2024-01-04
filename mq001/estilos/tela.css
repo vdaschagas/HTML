@@ -32,6 +32,11 @@ menu li {
     padding: 10px;
 }
 
+menu li a {
+    text-decoration: none;
+    color: white;
+}
+
 article {
     width: 600px;
     padding: 10px;
