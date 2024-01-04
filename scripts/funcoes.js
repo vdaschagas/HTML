@@ -1,20 +1,4 @@
-function mudouTamanho(){
-    if(window.innerWidth >=768){
-        mnuItens.style.display = 'block';
-    }
-    else {
-        mnuItens.style.display = 'none';
-    }
-}
-function clickMenu() {
-    if(mnuItens.style.display == 'block'){
-        mnuItens.style.display = 'none';
-    }
-    else {
-        mnuItens.style.display = 'block';
-    }
-}
-
+/* == INICIO ==*/
 
 /* ANIMAR */
 function animar() {
@@ -34,6 +18,13 @@ function menuShow() {
     }
 }
 
+function clickMenu() {
+    if(itens.style.display == 'block'){
+        itens.style.display = 'none'
+    } else {
+        itens.style.display = 'block'
+    }
+}
 
 window.addEventListener("scroll", function(){
     let header = document.querySelector('.cabecalho')
@@ -49,8 +40,10 @@ var onda4= documento.getElementById('onda4')
 window.addEventListener('scrool', function(){
     var rolagemPos = window.scrollY
 
-    onda1.style.backgroundPositionX = 400 + rolagemPos * 8 + 'px'
-    onda2.style.backgroundPositionX = 300 + rolagemPos * -6 + 'px'
-    onda3.style.backgroundPositionX = 200 + rolagemPos * 4 + 'px'
+    onda1.style.backgroundPositionX = 400 + rolagemPos * 4 + 'px'
+    onda2.style.backgroundPositionX = 300 + rolagemPos * -4 + 'px'
+    onda3.style.backgroundPositionX = 200 + rolagemPos * 2 + 'px'
     onda4.style.backgroundPositionX = 100 + rolagemPos * -2 + 'px'
 })
+
+

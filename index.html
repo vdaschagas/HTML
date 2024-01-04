@@ -3,235 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/media-query.css">
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/galeria.css">
-    <script src="scripts/funcoes.js"></script>
-    <script src="scripts/slide.js" defer></script>
-    <title>agência burn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script language="javascript" src="scripts/funcoes.js"></script>
+    <title>Media Queries</title>
 </head>
-<body  onresize="mudouTamanho()">
-
+<body>
     <header class="cabecalho">
+        <div class="container">
 
-        <div class="logo">
-            <div>
-                <img id="img_logo" src="img/logo.png" alt="">
-                <h1 class="nomeLogo"><span>agência</span> burn</h1>
-            </div>
-        </div>
-
-        <div class="subTitulo">
-            <div>
-                <h2>
-                    Marketing criativo
-                </h2>
-                <label class="switch">
-                    <input type="checkbox"  name="switch-btn">
+            <div class="flex">
+    
+                <h1 class="hidden">Menu Principal</h1>
+                <div class="navbar">
+                  <a id="pagina-atual" href="index.html">Home</a>
+                  <a href="empresa.html">Empresa</a>
+                  <a href="#news">Blog</a>
+          
+                  <!-- = DROPDOWN = -->
+                  <div class="dropdown">
+                    <a href="contato.html">Media query</a>
+          
+                    <!-- = DROPDOWN-CONTENT = -->
+                    <div class="dropdown-content">
+                      <a href="#">Media query 01</a>
+                      <a href="#">Media query 02</a>
+                      <a href="#">Media query 03</a>
+                      <a href="#">Media query 04</a>
+                      <a href="#">Media query 05</a>
+                    </div>
+          
+                  </div>
+          
+                </div>
+      
+                <div class="logo">
+                  <a href="index.html"><img src="img/logo.png" alt=""></a>
+                  <h1> <span class="tamanho-diferente">sua</span> Empresa</h1>
+                  <h3>Menu</h3>
+                  
+                  <label class="switch">
+                    <input type="checkbox">
                     <span class="slider round"></span>
                   </label>
-            </div>
+      
+                </div>
+      
+              </div>
         </div>
-
-        <div class="navbarmenu">
-            <div id="icon-menu-mobile" >
-                <div class="menuh"></div>
-                <div class="menuh"></div>
-                <div class="menuh"></div>
-                <img src="img/menu_white_36dp.svg" alt="" onclick="clickMenu()">
-
-                <menu id="mnuItens">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
-                </menu>
-            </div>
+        <div class="btn-mobile">
+            <button class="btn-hamburger" onclick="animar()" id="btn-menu">
+              <span class="linha"></span>
+              <span class="linha"></span>
+              <span class="linha"></span>
+            </button>
         </div>
-
     </header>
+    <section class="banner">
+        <h1>As melhores <br>
+        oportunidades surgem <br>
+        quando memos se esperar! </h1><br>
+          <h1 class="destaque"> Aproveite os cursos que a Curso em Vídeo 
+            <br> disponibiliza para você.
+            <br> Material de qualidade e gratuíto.
+        </h1>
+      </section>
+    
+    
+    
+        <header class="parallax">
+          <section class="ondas-parallax">
+            <div class="onda" id="onda1"></div>
+            <div class="onda" id="onda2"></div>
+            <div class="onda" id="onda3"></div>
+            <div class="onda" id="onda4"></div>
+          </section>
+        </header>
 
-
-    <main>
-
-        <section class="secoesMain">
-            <div>
-                <h2>As melhores condições para sua empresa!</h2>           
-                <p>
-                    A impressão da sua marca será amor, expressão e sentimentos. 
-                    <br>Fidelize seus clientes da melhor forma existente sendo uma 
-                    marca de valor. 
-                </p> 
-                <div class="btn_consulta">
-                    <button> FALE COM O NOSSO TIME  </button>
-                </div>
-            </div>
-
-
-        </section>
-
-        <section class="secoesMain">
-            <h2 class="titulo-topo">O melhor marketing inclui:</h2>
-            <div class="galeria">
-                <div class="galeria-itens">
-                    <input type="radio" name="radio-btn" id="radio1">
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-          
-                    <div class="item-galeria first">
-          
-                        <img src="img/phone_iphone.svg" class="icone-slide" alt="Imagem 1">
-                        <div class="titulo-slide">
-                            <h3>Público engajado com sua marca</h3>
-                        </div>    
-                        <div class="texto-slide">
-                            <h4>Quando seu público admira sua marca eles serão sempre engajados</h4>
-                        </div>   
-                    </div>
-                    <div class="item-galeria">
-                        <img src="img/handshake.svg" class="icone-slide" alt="Imagem 2">
-                        <div class="titulo-slide">
-                            <h3>Público apaixonado pela sua marca</h3>
-                        </div>    
-                        <div class="texto-slide">
-                            <h4>Quando sua marca tem valor ela sempre será a primeira opção</h4>
-                        </div>
-                    </div>
-                    <div class="item-galeria">
-                        <img src="img/ssid_chart.svg" class="icone-slide" alt="Imagem 3">
-                        <div class="titulo-slide">
-                            <h3>Baixo investimento e alta rentabilidade</h3>
-                        </div>    
-                        <div class="texto-slide">
-                            <h4>Investimento baixo e alta rentabilidade com nossas técnicas</h4>
-                        </div>   
-                    </div>
-          
-          
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                    </div>
-                </div>
-        
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                </div>
-             </div>
-        </div>
-        </section>
-
-        <section class="secoesMainFaixas">
-            <h2>Sempre atualizados</h2>        
-            <p>
-                Treinamentos semanais com nossa equipe para estarmos sempre ligados as tendências e novidades do mercado.
-            </p>
-        </section>
-
-        <section class="secoesMainFaixas">
-
-            <h2>O MELHOR MARKETING</h2>        
-            <p>
-                é aquele que não parece marketing!
-            </p>
-            <img class="revelar" src="img/design4.svg"  alt="" > <!--  DESIGNER  -->
-        </section>
-
-        <section class="secoesMainFaixas">
-            <h2>Alto alcance com:</h2>        
-            <img class="reduzir" src="img/design3.svg"  alt="" > <!--  DESIGNER  -->
-        </section>
-
-        <section class="secoesMainFaixas">
-            <h2>Pacotes Marketing e Produções</h2>        
-            <p>
-                valores a partir de R$999
-            </p>
-            <img class="vadireita" src="img/design.svg"  alt="" > <!--  DESIGNER  -->
-        </section>
-
-        <section class="secoesMainFaixas">
-            <h2>Pacotes Meta e Google ADS</h2>        
-            <p>
-                valores a partir de R$699
-            </p>
-            <img class="ampliar" src="img/design4.svg"  alt=""> <!--  DESIGNER  -->
-        </section>
-
-        <section class="secoesMainFaixas">
-            <img class=" ampliar" id="lcolor" src="img/logo-color.png"  alt="">
-            <h2>Mais de 25 mil leads gerados no último ano.</h2>        
-        </section>
-
-    </main>
-
-
-    <footer>
-        <div class="convite">
-            <h1>
-                Faça parte da revolução Burn, cancelamos seu contrato se não obter o retorno que esperava!
-            </h1>
-            <img src="img/design4.svg" alt="" > <!--  DESIGNER  -->
-        </div>
-
-
-        
-        <section class="info">
-            <div>
-                <p><h2>Sobre nós</h2></p>
-                <p>
-                    A agência Burn é resultado através do digital para sua empresa.
-                    <br/>O nosso propósito é transformar pequenos em protagonistas.
-                    <br/>Ajudar negócios que têm potencial para crescer a se tornarem uma Marca de Sucesso.
-                </p>
-            </div>
-
-          <div>
-            <h2>Navegação</h2>
-                    <ul>
-                      <li><a class="decoration" href="#">Home</a></li>
-                      <li><a class="decoration" href="#">Quem somos</a></li>
-                      <li><a class="decoration" href="#">Blog</a></li>
-                      <li><a class="decoration" href="#">Canais de conteúdo</a></li>
-                      <li><a class="decoration" href="#">Trabalhe conosco</a></li>            
-                      <li><a class="decoration" href="#">Contato</a></li>
-                    </ul>
-          </div>
-
-          <div>
-            <h2>Nosso Programa</h2>
-            <p>
-                Atraia uma fila de clientes novos todos os dias, fature mais e cresça com previsibilidade de resultados.
-                <br/>O nosso programa tem como objetivo de desenvolver a estratégica de marketing digital do seu negócio e
-                <br/>acompanhar a sua execução com foco nos resultados.
-                <br/><a class="decoration" href="#">Saiba mais ...</a>
-            </p>
-          </div>
-
-          <div>
-            <h2>Fale conosco</h2>
-            <p>
-                contato@agenciaburn.com
-                <br/>Whatsapp: (14) 00000-0000
-                <br/>Telefone: (14) 0000-0000
-                <br/>agência Burn
-                <br/>CNPJ: 00.000.000/0001-00
-                <br/>Privacidade de dados
-                <br/><a class="decoration" href="#">Política de privacidade</a>
-                <br/><a class="decoration" href="#">Termos de uso</a>
-            </p>
-          </div>
-        
-        </section>
-
-        <div class="referencia">
-          <p>Agência Burn © 2023 por: valterdaschagas.<br>Todos os Direitos Reservados.</p>
-        </div>  
-    </footer>
 </body>
 </html>
